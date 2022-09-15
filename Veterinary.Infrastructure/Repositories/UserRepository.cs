@@ -1,31 +1,27 @@
-﻿using Veterinary.Core.DTOs;
+﻿
+using Veterinary.Core.DTOs;
 using Veterinary.Infrastructure.Services;
 
 namespace Veterinary.Infrastructure.Repositories
 {
-    public class PetTypeRepository : IPetTypeRepository
+    public class UserRepository : IUserRepository
     {
         public Task Delete(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<PetTypeFullDto>> GetAll()
+        public Task<IEnumerable<UserFullDto>> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Task<PetTypeFullDto> GetById(int id)
+        public Task Insert(UserFullDto entity)
         {
             throw new NotImplementedException();
         }
 
-        public Task Insert(PetTypeFullDto entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Update(PetTypeFullDto entity)
+        public Task Update(UserFullDto entity)
         {
             throw new NotImplementedException();
         }

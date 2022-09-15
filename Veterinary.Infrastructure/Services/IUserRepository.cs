@@ -1,8 +1,8 @@
-﻿using Veterinary.Core.Entities;
+﻿using Veterinary.Core.DTOs;
 
 namespace Veterinary.Infrastructure.Services
 {
-    public interface IUserRepository
+    public interface IUserRepository : IGenericRepository<UserFullDto>
     {
     }
 }

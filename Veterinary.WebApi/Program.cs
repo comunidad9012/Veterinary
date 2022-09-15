@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using Veterinary.Infrastructure.Services;
 using Veterinary.Infrastructure.Repositories;
+using Veterinary.Core.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,8 +18,14 @@ builder.Services.AddDbContext<VeterinaryContex>(options =>
 //Inyeccion de dependencias de los repositorios a los controladores. Cada que pidan crear un objeto en base a IClientRepository
 //Se creará un objeto ClientRepository (porque es imposible crear un objeto en base a una interfaz)
 builder.Services.AddScoped<IClientRepository, ClientRepository> ();
-builder.Services.AddControllers();
-
+builder.Services.AddScoped<IPetRepository, PetRepository> ();
+builder.Services.AddScoped<IVisitRepository, VisitRepository> ();
+builder.Services.AddScoped<IPetTypeRepository, PetTypeRepository> ();
+builder.Services.AddScoped<IProcedureRepository, ProcedureRepository> ();
+builder.Services.AddScoped<ISpecialtyRepository, SpecialtyRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository> ();
+builder.Services.AddScoped<IUserRolRepository, UserRolRepository>();
+builder.Services.AddScoped<IVisitDetailRepository, VisitDetailRepository>();
 builder.Services.AddControllers();
 
 //Inyección de dependencias de FluentValidator:

@@ -1,8 +1,8 @@
-﻿using Veterinary.Core.Entities;
+﻿using Veterinary.Core.DTOs;
 
 namespace Veterinary.Infrastructure.Services
 {
-    public interface IVetRepository
+    public interface IVetRepository: IGenericRepository<VetFullDto>
     {
     }
 }

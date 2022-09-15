@@ -5,29 +5,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Veterinary.Infrastructure.Repositories
 {
-    public class PetRepository : IPetRepository
+    public class VisitRepository : IVisitRepository
     {
         public Task Delete(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<PetFullDto>> GetAll()
+        public Task<IEnumerable<VisitFullDto>> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Task<PetFullDto> GetById(int id)
+        public Task Insert(VisitFullDto entity)
         {
             throw new NotImplementedException();
         }
 
-        public Task Insert(PetFullDto entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Update(PetFullDto entity)
+        public Task Update(VisitFullDto entity)
         {
             throw new NotImplementedException();
         }

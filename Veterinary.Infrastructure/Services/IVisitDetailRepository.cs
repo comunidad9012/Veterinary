@@ -2,7 +2,7 @@
 
 namespace Veterinary.Infrastructure.Services
 {
-    public interface IProcedureRepository : IGenericRepository<ProcedureFullDto>
+    public interface IVisitDetailRepository : IGenericRepository<VisitDetailFullDto>
     {
     }
 }

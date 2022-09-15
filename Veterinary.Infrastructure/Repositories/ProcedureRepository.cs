@@ -1,33 +1,26 @@
-﻿using Veterinary.Infrastructure.Data;
+﻿using Veterinary.Core.DTOs;
 using Veterinary.Infrastructure.Services;
-using Veterinary.Core.DTOs;
-using Microsoft.EntityFrameworkCore;
 
 namespace Veterinary.Infrastructure.Repositories
 {
-    public class PetRepository : IPetRepository
+    public class ProcedureRepository : IProcedureRepository
     {
         public Task Delete(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<PetFullDto>> GetAll()
+        public Task<IEnumerable<ProcedureFullDto>> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Task<PetFullDto> GetById(int id)
+        public Task Insert(ProcedureFullDto entity)
         {
             throw new NotImplementedException();
         }
 
-        public Task Insert(PetFullDto entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task Update(PetFullDto entity)
+        public Task Update(ProcedureFullDto entity)
         {
             throw new NotImplementedException();
         }

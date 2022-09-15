@@ -39,7 +39,7 @@ namespace Veterinary.WebApi.Controllers
         [HttpGet]
 
         //Devolverá el resultado de una acción .
-        public async Task<ActionResult<IEnumerable<ClientFullDto>>> GetProvinceList()
+        public async Task<ActionResult<IEnumerable<ClientFullDto>>> GetClientList()
             {
              var clients = await _clientRepository.GetAll();
              return Ok(clients);
