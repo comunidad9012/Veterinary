@@ -45,6 +45,29 @@ namespace Veterinary.WebApi.Controllers
              return Ok(clients);
             }
         //[HttpGet ("{clientName:string}")]
+        //El [HttpPut("{id}")] hace un update.
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutClientFullDto(int id,Client client)
+        {
+            //Al usar los DTO hay que hacer un mapeo dentro de este if. Para asegurarse de que el id que está mandando sea igual al que está en el cuerpo del mensaje.
+            if (id != client.clientId)
+            {
+                return BadRequest();
+            }
+            //Si el id corresponde, ahora si hago el mapeo.
+            try
+            {
+                await clientRepository.SaveClient(client);
+            }
+        }
+        //Esto determina si el dato es nuevo o solo se va a modificar.
+        public async Task SaveClient(ClientFullDto client)
+        {
+            if(client.clientId > 0)
+            {
+
+            }
+        }
          
     }
 }
