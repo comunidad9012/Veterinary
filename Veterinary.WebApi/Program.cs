@@ -11,6 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddApplicationLayer();
+
+
+
+
 //Inyeccion de dependecias al contexto:
 builder.Services.AddDbContext<VeterinaryContex>(options =>
  options.UseSqlServer(builder.Configuration.GetConnectionString("DbContext") ?? throw new InvalidOperationException("Connection string 'DbContext' not found.")));

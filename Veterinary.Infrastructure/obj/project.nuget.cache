@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "/LLV6W4ycp68I5frCMBTDTkx4ONEEZHWBBDQpvnTejhwWo0PSDzEQZPMpbSGaWGlfjl23kPpPsCvuublWWV83A==",
+  "dgSpecHash": "IN8qgUzm3rnZ56McHMz1MZvMitt3ssIinmUvr5nNMCNujcg6OehTNaCOZGXVH44Tzthdc9BZWYv22ttADdXiJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Veterinary.Infrastructure\\Veterinary.Infrastructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nicol\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
-    "C:\\Users\\Nicol\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.1\\fluentvalidation.aspnetcore.11.2.1.nupkg.sha512",
-    "C:\\Users\\Nicol\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.0\\fluentvalidation.dependencyinjectionextensions.11.2.0.nupkg.sha512",
     "C:\\Users\\Nicol\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Nicol\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Nicol\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
