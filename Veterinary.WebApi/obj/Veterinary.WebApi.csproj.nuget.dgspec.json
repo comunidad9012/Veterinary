@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.0, )"
@@ -144,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Veterinary.Infrastructure\\Veterinary.Infrastructure.csproj": {
+    "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Veterinary.Infrastructure\\Veterinary.Infrastructure.csproj",
-        "projectName": "Veterinary.Infrastructure",
-        "projectPath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Veterinary.Infrastructure\\Veterinary.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Nicol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Veterinary.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -167,7 +171,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\ApplicationsServices\\ApplicationsServices.csproj": {
+                "projectPath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\ApplicationsServices\\ApplicationsServices.csproj"
+              },
+              "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\DomainClass\\DomainClass.csproj": {
+                "projectPath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\DomainClass\\DomainClass.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -180,13 +191,21 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Ardalis.Specification.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -236,8 +255,8 @@
               "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\ApplicationsServices\\ApplicationsServices.csproj": {
                 "projectPath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\ApplicationsServices\\ApplicationsServices.csproj"
               },
-              "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Veterinary.Infrastructure\\Veterinary.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Veterinary.Infrastructure\\Veterinary.Infrastructure.csproj"
+              "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -259,6 +278,10 @@
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

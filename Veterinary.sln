@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Veterinary.UI", "Veterinary.UI\Veterinary.UI.csproj", "{29BEA183-4FA5-4BA3-ABEE-E745D160FEB0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Veterinary.Infrastructure", "Veterinary.Infrastructure\Veterinary.Infrastructure.csproj", "{4B40DC03-7888-4BCC-90F8-0D5E0E267FBB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Veterinary.WebApi", "Veterinary.WebApi\Veterinary.WebApi.csproj", "{E0A44C99-63FD-44DA-B7D5-44320D1A1F6A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SRC", "SRC", "{15F6052C-2218-4004-9640-596C8E010DA3}"
@@ -21,13 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EndPoint", "EndPoint", "{69
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{44C21022-E96E-4EB1-B0C6-8785E23D108C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationsServices", "ApplicationsServices\ApplicationsServices.csproj", "{DD939E29-024A-456E-B944-AFFDDFE4DE69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationsServices", "ApplicationsServices\ApplicationsServices.csproj", "{DD939E29-024A-456E-B944-AFFDDFE4DE69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainClass", "DomainClass\DomainClass.csproj", "{DCCC14D6-CBC4-4BCD-8732-AD55247ACD03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainClass", "DomainClass\DomainClass.csproj", "{DCCC14D6-CBC4-4BCD-8732-AD55247ACD03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{30DEE2C8-444E-460A-9BA7-82F59CA759C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{30DEE2C8-444E-460A-9BA7-82F59CA759C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{A8C39554-7A33-4582-868A-9087DC2FA386}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{A8C39554-7A33-4582-868A-9087DC2FA386}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,14 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{29BEA183-4FA5-4BA3-ABEE-E745D160FEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29BEA183-4FA5-4BA3-ABEE-E745D160FEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29BEA183-4FA5-4BA3-ABEE-E745D160FEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29BEA183-4FA5-4BA3-ABEE-E745D160FEB0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B40DC03-7888-4BCC-90F8-0D5E0E267FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B40DC03-7888-4BCC-90F8-0D5E0E267FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B40DC03-7888-4BCC-90F8-0D5E0E267FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B40DC03-7888-4BCC-90F8-0D5E0E267FBB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E0A44C99-63FD-44DA-B7D5-44320D1A1F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E0A44C99-63FD-44DA-B7D5-44320D1A1F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0A44C99-63FD-44DA-B7D5-44320D1A1F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,8 +56,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{29BEA183-4FA5-4BA3-ABEE-E745D160FEB0} = {15F6052C-2218-4004-9640-596C8E010DA3}
-		{4B40DC03-7888-4BCC-90F8-0D5E0E267FBB} = {44C21022-E96E-4EB1-B0C6-8785E23D108C}
 		{E0A44C99-63FD-44DA-B7D5-44320D1A1F6A} = {697D47E5-6971-418B-83D9-433159C101C4}
 		{46EC03F1-7D8F-4E39-BB22-A5A1E75FEEBF} = {15F6052C-2218-4004-9640-596C8E010DA3}
 		{697D47E5-6971-418B-83D9-433159C101C4} = {15F6052C-2218-4004-9640-596C8E010DA3}

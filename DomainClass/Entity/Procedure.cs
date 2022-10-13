@@ -1,4 +1,4 @@
-﻿namespace Veterinary.Core.Entities
+﻿namespace Veterinary.DomainClass.Entity
 {
     public class Procedure
     {

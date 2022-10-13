@@ -1,6 +1,6 @@
 ﻿using DomainClass.Common;
 
-namespace Veterinary.Core.Entities
+namespace Veterinary.DomainClass.Entity
 {
     public class Client : BaseEntity
     {

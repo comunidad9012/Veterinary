@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rkmgYkF+DjJMWmt7qS11CTx0KUNlOWZfrfqcJJEcihA5ROlHeV5TVx9ZPDMlWiryzLx6AIk6fUJt7iGcJHkjSg==",
+  "dgSpecHash": "pVpeyAwz7nzo1UFwCobu+4TpE4mcqJrMvss6THogLatlxoK5qpnKM7V/4X2NjDpTeKRDamnSQiA76HyIIAF5Gw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicol\\OneDrive\\Documentos\\Visual Studio 2022\\Repositories\\Veterinary\\Veterinary\\ApplicationsServices\\ApplicationsServices.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Nicol\\.nuget\\packages\\ardalis.specification\\6.1.0\\ardalis.specification.6.1.0.nupkg.sha512",
     "C:\\Users\\Nicol\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Nicol\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Nicol\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",

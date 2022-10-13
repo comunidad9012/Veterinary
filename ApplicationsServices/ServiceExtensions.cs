@@ -1,8 +1,8 @@
-﻿using FluentValidation;
+﻿using ApplicationsServices.Behavior;
+using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 
 namespace ApplicationsServices
 {
@@ -14,6 +14,7 @@ namespace ApplicationsServices
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
         }
     }
 }
