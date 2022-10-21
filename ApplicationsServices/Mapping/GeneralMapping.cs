@@ -1,5 +1,6 @@
 ﻿using ApplicationsServices.Features.Commands.CreateCommands;
 using AutoMapper;
+using Veterinary.Core.DTOs;
 using Veterinary.DomainClass.Entity;
 
 namespace ApplicationsServices.Mapping
@@ -8,7 +9,11 @@ namespace ApplicationsServices.Mapping
     {
         public GeneralMaping()
         {
+            CreateMap<Client, ClientFullDto>();
             CreateMap<CreateClientCommand, Client>();
+
+            CreateMap<User, UserFullDto>();
+            CreateMap<CreateUserCommand, User>();
         }
     }
 }

@@ -14,13 +14,14 @@ namespace ApplicationsServices.Features.Commands.CreateCommands
         public string clientAdress { get; set; }
         public string clientPhoneNum { get; set; }
         public string clientIdn { get; set; }
+        public string clientEmail { get; set; }
     }
-    public class CreateUserCommandHandler : IRequestHandler<CreateClientCommand, Response<long>>
+    public class CreateClientCommandHandler : IRequestHandler<CreateClientCommand, Response<long>>
     {
         private readonly IRepository<Client> _repository;
         private readonly IMapper _mapper;
 
-        public CreateUserCommandHandler(IRepository<Client> repository, IMapper mapper)
+        public CreateClientCommandHandler(IRepository<Client> repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;

@@ -9,5 +9,6 @@ namespace Veterinary.DomainClass.Entity
         public string? clientAdress { get; set; }
         public string? clientPhoneNum { get; set; }
         public string? clientIdn { get; set; }
+        public string? clientEmail { get; set; }
     }
 }

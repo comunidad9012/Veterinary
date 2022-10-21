@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationsServices.Interfaces
 {
-    public class IClientRepository
+    public interface IClientRepository
     {
 
     }

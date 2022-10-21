@@ -1,13 +1,11 @@
-﻿namespace Veterinary.DomainClass.Entity
+﻿using DomainClass.Common;
+
+namespace Veterinary.DomainClass.Entity
 {
-    public class PetType
+    public class PetType : BaseEntity
     {
         public int typeId { get; set; }
         public string? type { get; set; }
 
-        //Audit data
-        public DateTime dateUpload { get; set; }
-        public DateTime dateUpdate { get; set; }
-        public int usuario { get; set; }
     }
 }

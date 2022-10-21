@@ -20,7 +20,7 @@ namespace Veterinary.WebApi.Middleware
             }
             catch (Exception err)
             {
-                var response = context.Response;
+                var response = context.Response; //Parar aca para ver errores
                 response.ContentType = "application/json";
                 var responseModel = new Response<string>() { Successful = false, Message = err?.Message };
                 switch (err)
