@@ -14,6 +14,9 @@ namespace ApplicationsServices.Mapping
 
             CreateMap<User, UserFullDto>();
             CreateMap<CreateUserCommand, User>();
+
+            CreateMap<Pet, PetFullDto>();
+            CreateMap<CreatePetCommand, Pet>();
         }
     }
 }

@@ -4,8 +4,12 @@ namespace Veterinary.DomainClass.Entity
 {
     public class Visit : BaseEntity
     {
-        public int petId { get; set; }
-        public int vetId { get; set; }
+        public long petId { get; set; }
+        public long vetId { get; set; }
         public DateTime visitDate { get; set; }
+
+        //Foreing Keys
+        public ICollection<Pet>? pet { get; set; }
+        public ICollection<Vet>? vet { get; set; }
     }
 }

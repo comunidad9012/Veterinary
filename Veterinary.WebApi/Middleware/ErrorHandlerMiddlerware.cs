@@ -18,7 +18,7 @@ namespace Veterinary.WebApi.Middleware
             {
                 await _next(context);
             }
-            catch (Exception err)
+            catch (Exception err) //Poner el cursor sobre err si se detiene el programa para ver el mensaje de error.
             {
                 var response = context.Response; //Parar aca para ver errores
                 response.ContentType = "application/json";

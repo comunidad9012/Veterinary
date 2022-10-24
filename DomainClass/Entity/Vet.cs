@@ -9,6 +9,9 @@ namespace Veterinary.DomainClass.Entity
         public string? verAdress { get; set; }
         public string? verPhoneNum { get; set; }
         public string? vetIdn { get; set; }
-        public int specialtyId { get; set; }
+        public long specialtyId { get; set; }
+
+        //Foreing keys
+        public ICollection<Specialty>? specialty { get; set; }
     }
 }

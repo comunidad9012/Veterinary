@@ -2,7 +2,7 @@
 {
     public class ClientFullDto
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string? clientName { get; set; }
         public string? clientSurname { get; set; }
         public string? clientAdress { get; set; }

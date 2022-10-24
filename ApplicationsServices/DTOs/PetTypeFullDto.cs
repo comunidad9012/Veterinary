@@ -2,12 +2,7 @@
 {
     public class PetTypeFullDto
     {
-        public int typeId { get; set; }
+        public long Id { get; set; }
         public string? type { get; set; }
-
-        //Audit data
-        public DateTime dateUpload { get; set; }
-        public DateTime dateUpdate { get; set; }
-        public int usuario { get; set; }
     }
 }

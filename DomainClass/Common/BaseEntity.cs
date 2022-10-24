@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
-namespace DomainClass.Common
+﻿namespace DomainClass.Common
 {
     public class BaseEntity
     {

@@ -2,7 +2,7 @@
 {
     public class UserFullDto
     {
-        public long id { get; set; }
+        public long Id { get; set; }
         public string? userName { get; set; }
         public string? userSurname { get; set; }
         public string? userPhoneNum { get; set; }
