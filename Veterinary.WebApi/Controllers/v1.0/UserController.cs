@@ -1,7 +1,9 @@
 ﻿using ApplicationsServices.Features.Commands.CreateCommands;
 using ApplicationsServices.Features.Commands.DeleteCommands;
 using ApplicationsServices.Features.Commands.UpdateCommands;
+using ApplicationsServices.Features.Queries.SelectAllQueries;
 using ApplicationsServices.Features.Queries.SelectByQueries;
+using ApplicationsServices.Filters;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Veterinary.WebApi.Controllers.v1._0
@@ -9,6 +11,18 @@ namespace Veterinary.WebApi.Controllers.v1._0
     [ApiVersion("1.0")]
     public class UserController : BaseApiController
     {
+        [HttpGet]
+        public async Task<IActionResult> GetAllUsers([FromQuery] UserResponseFilter filter)
+        {
+            return Ok(await Mediator.Send(new SelectUserQuery
+            {
+                PageNumber = filter.PageNumber,
+                PageSize = filter.PageSize,
+                name = filter.name,
+                userSurname = filter.userSurname
+            }));
+        }
+
         [HttpGet("{id:long}")]
         public async Task<IActionResult> GetById(long id)
         {

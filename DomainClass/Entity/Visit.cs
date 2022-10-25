@@ -8,8 +8,5 @@ namespace Veterinary.DomainClass.Entity
         public long vetId { get; set; }
         public DateTime visitDate { get; set; }
 
-        //Foreing Keys
-        public ICollection<Pet>? pet { get; set; }
-        public ICollection<Vet>? vet { get; set; }
     }
 }

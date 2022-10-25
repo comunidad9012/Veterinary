@@ -10,8 +10,5 @@ namespace Veterinary.DomainClass.Entity
         public string? verPhoneNum { get; set; }
         public string? vetIdn { get; set; }
         public long specialtyId { get; set; }
-
-        //Foreing keys
-        public ICollection<Specialty>? specialty { get; set; }
     }
 }

@@ -13,8 +13,5 @@ namespace Veterinary.DomainClass.Entity
         public string? userPhoneNum { get; set; }
         public long userRol { get; set; }
 
-        //Foreing Keys
-        public ICollection<UserRol>? _userRol { get; set; }
-
     }
 }

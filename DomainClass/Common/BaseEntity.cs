@@ -1,4 +1,6 @@
-﻿namespace DomainClass.Common
+﻿using Veterinary.DomainClass.Entity;
+
+namespace DomainClass.Common
 {
     public class BaseEntity
     {
@@ -9,5 +11,6 @@
         public long LastModifiedBy { get; set; }//quien lo modificó
         public DateTime? LastModifiedDate { get; set; }
         public bool IsDeleted { get; set; }
-    }
+
+   }
 }

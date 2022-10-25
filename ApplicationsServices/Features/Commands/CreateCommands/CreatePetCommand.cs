@@ -11,10 +11,6 @@ namespace ApplicationsServices.Features.Commands.CreateCommands
         public string? petName { get; set; }
         public long clientId { get; set; }
         public long typeId { get; set; }
-
-        //Foreing keys
-        public ICollection<PetType>? petType { get; set; }
-        public ICollection<Client>? client { get; set; }
     }
     public class CreatePetCommandHandler : IRequestHandler<CreatePetCommand, Response<long>>
     {

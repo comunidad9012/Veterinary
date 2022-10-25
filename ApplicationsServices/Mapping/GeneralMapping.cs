@@ -17,6 +17,9 @@ namespace ApplicationsServices.Mapping
 
             CreateMap<Pet, PetFullDto>();
             CreateMap<CreatePetCommand, Pet>();
+
+            CreateMap<PetType, PetTypeFullDto>();
+            CreateMap<CreatePetTypeCommand, PetType>();
         }
     }
 }

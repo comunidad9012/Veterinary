@@ -16,15 +16,11 @@ namespace Persistence.Contexts
 
         DbSet<Client> Clients { get; set; }
         DbSet<User> Users { get; set; }
-        //DbSet<Pet> Pets { get; set; }
-        //DbSet<PetType> PetTypes { get; set; }
-        //DbSet<Procedure> Procedures { get; set; }
-        //DbSet<Specialty> Specialties { get; set; }
-        //DbSet<UserRol> UserRoles { get; set; }
-        //DbSet<Vet> Vets { get; set; }
-        //DbSet<Visit> Visits { get; set; }
-        //DbSet<VisitDetail> VisitDetails { get; set; }
-        //----------------------------------------------------------------------------------.
+        DbSet<Pet> Pets { get; set; }
+        DbSet<PetType> PetTypes { get; set; }
+
+
+        //--------------------------------------------------------------------//
         ////Representar los modelos en la base de datos:
         //public DbSet<Client> Clients => Set<Client>();
         //public DbSet<Specialty> Specialties => Set<Specialty>();
